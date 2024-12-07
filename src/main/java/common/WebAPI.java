@@ -672,6 +672,11 @@ public class WebAPI {
         Select select = new Select(element);
         select.selectByIndex(value);
     }
+    public static void selectDropDownByValue(WebElement element, String value) {
+        Select select = new Select(element);
+        select.selectByValue(value);
+
+    }
 
     public static void windowMaximize() {
         driver.manage().window().maximize();
